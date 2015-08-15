@@ -38,7 +38,11 @@ group :development, :test do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  
+  gem 'rails-helper'
 
+  gem 'rspec'
+  gem 'webrat'
   gem 'rspec-rails'
 end
 
@@ -46,7 +50,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-group :test do
-  gem 'rspec'
-  gem 'webrat'
-end
+
