@@ -12,7 +12,7 @@ RSpec.describe PagesController, type: :controller do
     it "doit avoir le bon titre" do
       get 'home'
       response.should have_selector("title",
-      :content => "Home")
+      :content => "Accueil")
       end
   end
 
@@ -22,7 +22,7 @@ RSpec.describe PagesController, type: :controller do
       expect(response).to have_http_status(:success)
     end
     it "doit avoir le bon titre" do
-      get 'contact'
+      get :contact
       response.should have_selector("title",
       :content => "Contact")
     end
@@ -35,7 +35,7 @@ RSpec.describe PagesController, type: :controller do
     it "doit avoir le bon titre" do
       get 'about'
       response.should have_selector("title",
-      :content => "About")
+      :content => "Propos")
     end
   end
   
