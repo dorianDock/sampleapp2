@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  
+  resources :users
+
   get 'users/new'
 
   #homePage
@@ -18,7 +19,7 @@ Rails.application.routes.draw do
   get 'help' => 'pages#help'
   get 'about' => 'pages#about'
 
-   get 'signup' => 'users#new'
+  get 'signup' => 'users#new'
 
 
 
